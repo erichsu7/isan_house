@@ -1,0 +1,19 @@
+<form class="" action="<%= users_url %>" method="post">
+  <%= include_form_auth_token %>
+  <div class="">
+    <label for="user_name">Name:</label>
+    <input type="text" name="user[name]" value="<%= @user.name %>">
+  </div>
+
+  <div class="">
+    <label for="user_email">Email:</label>
+    <input type="text" name="user[email]" value="<%= @user.email %>">
+  </div>
+
+  <div class="">
+    <label for="user_password">Password:</label>
+    <input type="text" name="user[password]" value="<%= @user.password %>">
+  </div>
+
+  <input type="submit" value="Create account">
+</form>
